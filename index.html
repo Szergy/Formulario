@@ -70,7 +70,7 @@
             <label for="edad">Edad</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text" name="edad" pattern="[1-120]*" required>
+            <input type="number" name="edad" pattern="[1-120]*" required>
           </div>
         </div>
 
@@ -86,7 +86,7 @@
             <label for="numeros">Números</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <input type="text" name="numeros" pattern="[0-9]*" required>
           </div>
         </div>
         <!-- Validar que el usuario solo pueda ingresar números positivos -->
@@ -101,7 +101,7 @@
             <label for="positivos">Positivos</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <input type="number" name="positivos" min="1" pattern="[0-9]*" required>
           </div>
         </div>
         <!-- El usuario podra incrematar de 0.5 en 0.5 y solo podra incremantar hasta 20, igualmente no podra decrementar menos de 10 y al iniciar el formulario iniciar con 15 -->
@@ -118,7 +118,7 @@
             <label for="maximo_minimo">maximo-minimo</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <input type="number" name="maximo-minimo" value="15" min="10" max="20" step="0.5" required>
           </div>
         </div>
         <!-- El usuario podra seleccionar la fecha de nacimiento -->
@@ -133,7 +133,7 @@
             <label for="fecha_nacimiento">Fecha nacimiento</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <input type="date" name="fecha_nacimiento" required>
           </div>
         </div>
         <!-- El usuario podra seleccionar la hora de registro -->
@@ -148,7 +148,7 @@
             <label for="hora">hora</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <input type="time" name="hora" required>
           </div>
         </div>
 
@@ -161,10 +161,17 @@
             <b>El usuario podra seleccionar su ciudad</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="ciudad">Ciudad</label>
+            <label for="Ciudad">Selecione su Ciudad:</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <select name="Ciudad" id="Ciudad" required>
+              <option value="Bogota">Bogota</option>
+              <option value="Medellin">Medellin</option>
+              <option value="Cali">Cali</option>
+              <option value="Pereira">Pereira</option>
+              <option value="Barranquilla">Barranquilla</option>
+              <option value="Otra">Otra</option>
+            </select>
           </div>
         </div>
 
@@ -178,11 +185,24 @@
               Otro)</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="ciudad">Ciudad</label>
+            <label for="Genero">Seleccione su Genero:</label>
           </div>
-          <div bis_skin_checked="1">
-            <input type="text">
+
+          <div>
+            <label for="Masculino">Masculino</label>
+            <input type="radio" name="Genero" id="Masculino" required>
           </div>
+
+          <div>
+            <label for="Femenino">Femenino</label>
+            <input type="radio" name="Genero" id="Femenino" required>
+          </div>
+
+          <div>
+            <label for="Otro">Otro</label>
+            <input type="radio" name="Genero" id="Otro" required>
+          </div>
+
         </div>
 
         <!-- El usuario podra seleccionar varias materias, (HTML, CSS, JS, JAVA, PYTHON, PHP) este campo es opcional es decir se debe trasnformar pero no es obligatorio estar seleccionada alguna materia -->
@@ -198,8 +218,35 @@
           <div bis_skin_checked="1">
             <label for="materias">Materias</label>
           </div>
-          <div bis_skin_checked="1">
-            <input type="text">
+
+          <div>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="HTML">
+          </div>
+
+          <div>
+            <label for="CSS">CSS</label>
+            <input type="checkbox" id="CSS">
+          </div>
+
+          <div>
+            <label for="JS">JS</label>
+            <input type="checkbox" id="JS">
+          </div>
+
+          <div>
+            <label for="JAVA">JAVA</label>
+            <input type="checkbox" id="JAVA">
+          </div>
+          
+          <div>
+            <label for="PYTHON">PYTHON</label>
+            <input type="checkbox" id="PYTHON">
+          </div>
+
+          <div>
+            <label for="PHP">PHP</label>
+            <input type="checkbox" id="PHP">
           </div>
         </div>
 
@@ -214,7 +261,7 @@
             <label for="archivos">Archivos</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <input type="file" name="archivos" id="archivos" accept="image/png, image/jpeg" multiple required>
           </div>
         </div>
 
@@ -227,10 +274,10 @@
             <b>El usuario podra ingresar su contraseña</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="contrasena">contraseña</label>
+            <label for="contraseña">Contraseña</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <input type="password" name="contrasena" id="contraseña">
           </div>
         </div>
 
@@ -243,10 +290,10 @@
               bloqueado y al iniciar el formulario debe estar lleno con el nombre del aprendiz</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="aprendiz">aprendiz</label>
+            <label for="aprendiz">Aprendiz</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="text">
+            <input type="text" name="aprendiz" id="aprendiz" value="Sergio Andres Suarez Galvis" readonly>
           </div>
         </div>
 
