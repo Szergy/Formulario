@@ -10,7 +10,7 @@
 <body __processed_8ff35bf1-4e2f-4727-8875-16cb5e93e3d2__="true"
   bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d">
   <div>
-    <h1>Formulario Evidencia</h1>
+    <h1>Formulario Evidencia:</h1>
     <div>
 
 
@@ -22,7 +22,7 @@
             <b>Validar Campo que al enviar solo se puedan enviar letras (a - z) tanto minusculas como mayusculas</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="nombre">Nombre</label>
+            <label for="nombre">Escriba su nombre(s)</label>
           </div>
           <div bis_skin_checked="1">
             <input type="text" name="nombre" pattern="[A,a-Z,z]*" required>
@@ -37,7 +37,7 @@
             <b>Validar Campo que al enviar solo se puedan enviar letras (a - z) solo letras minusculas</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="apellido">apellido</label>
+            <label for="apellido">Escriba su apellido(s)</label>
           </div>
           <div bis_skin_checked="1">
             <input type="text" name="apellido" pattern="[a-z]*" required>
@@ -52,7 +52,7 @@
             <b>Modificar el campo para que el usuario pueda seleccionar su color favorito</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="color">Color</label>
+            <label for="color">Seleccione su color favorito:</label>
           </div>
           <div bis_skin_checked="1">
             <input type="color" name="color" required>
@@ -67,10 +67,10 @@
             <b>Modificar el campo para que el usuario solo pueda ingresar números</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="edad">Edad</label>
+            <label for="edad">Seleccione su edad:</label>
           </div>
           <div bis_skin_checked="1">
-            <input type="number" name="edad" pattern="[1-120]*" required>
+            <input type="number" name="edad" pattern="^[1-120]*" required>
           </div>
         </div>
 
@@ -83,7 +83,7 @@
               campo siempre tiene que ser (type="text")</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="numeros">Números</label>
+            <label for="numeros">Seleccione numeros:</label>
           </div>
           <div bis_skin_checked="1">
             <input type="text" name="numeros" pattern="[0-9]*" required>
@@ -98,7 +98,7 @@
             <b>Validar el campo para que el usuario solo pueda ingresar números positivos</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="positivos">Positivos</label>
+            <label for="positivos">Seleccione numeros positivos:</label>
           </div>
           <div bis_skin_checked="1">
             <input type="number" name="positivos" min="1" pattern="[0-9]*" required>
@@ -115,7 +115,7 @@
               iniciar el formulario inicia con 15</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="maximo_minimo">maximo-minimo</label>
+            <label for="maximo_minimo">Selecciones un valor:</label>
           </div>
           <div bis_skin_checked="1">
             <input type="number" name="maximo-minimo" value="15" min="10" max="20" step="0.5" required>
@@ -130,7 +130,7 @@
             <b>El usuario podra seleccionar la fecha de nacimiento</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="fecha_nacimiento">Fecha nacimiento</label>
+            <label for="fecha_nacimiento">Seleccione su fecha de nacimiento:</label>
           </div>
           <div bis_skin_checked="1">
             <input type="date" name="fecha_nacimiento" required>
@@ -145,7 +145,7 @@
             <b>El usuario podra seleccionar la hora de registro</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="hora">hora</label>
+            <label for="hora">Seleccione su hora de regsitro:</label>
           </div>
           <div bis_skin_checked="1">
             <input type="time" name="hora" required>
@@ -216,7 +216,7 @@
               debe trasnformar pero no es obligatorio estar seleccionada alguna materia</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="materias">Materias</label>
+            <label for="materias">Seleccione materias (opcional)</label>
           </div>
 
           <div>
@@ -258,7 +258,7 @@
             <b>El usuario podra seleccionar varias imagenes pero el formato valido es .jpg y .png</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="archivos">Archivos</label>
+            <label for="archivos">Adjuntar imagenes (png, jpeg)</label>
           </div>
           <div bis_skin_checked="1">
             <input type="file" name="archivos" id="archivos" accept="image/png, image/jpeg" multiple required>
@@ -274,7 +274,7 @@
             <b>El usuario podra ingresar su contraseña</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="contraseña">Contraseña</label>
+            <label for="contraseña">Ingrese su contraseña:</label>
           </div>
           <div bis_skin_checked="1">
             <input type="password" name="contrasena" id="contraseña">
@@ -290,7 +290,7 @@
               bloqueado y al iniciar el formulario debe estar lleno con el nombre del aprendiz</b>
           </div>
           <div bis_skin_checked="1">
-            <label for="aprendiz">Aprendiz</label>
+            <label for="aprendiz">Aprendiz:</label>
           </div>
           <div bis_skin_checked="1">
             <input type="text" name="aprendiz" id="aprendiz" value="Sergio Andres Suarez Galvis" readonly>
@@ -301,11 +301,6 @@
           <button type="submit">Validar formulario</button>
         </div>
         <div bis_skin_checked="1">
-          <span>
-            Felicidades, llegamos al final del formulario, eso quiere decir que ya entendimos la actividad. fecha de
-            entrega (sabado 14 de Septiembre del 2024).
-          </span>
-        </div>
       </form>
 </body>
 
